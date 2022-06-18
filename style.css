@@ -806,7 +806,7 @@ h1.home-frontend {
 		flex-wrap: wrap; 
 		padding-top: 0px;
 		width: 100vw;
-		height: calc(100vh - 150px);
+		height: calc(100vh - 90px);
 		padding-bottom: 0px;
 	}
 
