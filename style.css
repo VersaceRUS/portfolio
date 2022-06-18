@@ -817,13 +817,44 @@ h1.home-frontend {
 
 
     .about-tittle {
-    padding-top: 120px;
+    padding-top: 100px;
+	}
+
+	.about-tittle_mobile {
+	padding-top: 30px;
+	width: 80px;
+    border-right: 1px solid #505050;
+	}
+
+	.about-tittle_mobile h3 {
+	display: block;
+    transform: rotate(270deg);
+    text-align: end;
+    width: 10rem;
+    height: 6rem;
+    margin: 0 auto;
+    padding-right: 0px;
+    color: var(--color-three);
+    text-decoration: none;
+    font-size: 2rem;
 	}
 
 	.about-tittle h3{
 		padding-right: 0px;
+		height: 6rem;
+	}
+
+	.about-subtittle_mobile {
+	min-width: 0px;
+    padding: 0 10px;
 	}
     
+    .about-subtittle_mobile p {
+   	font-size: 1.2rem;
+    line-height: 20px;
+    color: #bcbcbc;
+    }
+
     .about-about_mobile {
     display: flex;
     width: 100vw;
