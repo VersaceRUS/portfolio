@@ -806,7 +806,7 @@ h1.home-frontend {
 		flex-wrap: wrap; 
 		padding-top: 0px;
 		width: 100vw;
-		height: calc(100vh - 90px);
+		height: 100vh;
 		padding-bottom: 0px;
 	}
 
@@ -833,12 +833,12 @@ h1.home-frontend {
    	width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(2, 43%);
+    grid-template-rows: repeat(2, 30%);
 	}
 
 	.about-subtittle {
 		min-width: 0px;
-		padding: 30px 10px 0 10px;
+		padding: 0 10px;
 	}
 
 
