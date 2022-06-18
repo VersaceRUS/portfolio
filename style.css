@@ -465,7 +465,7 @@ h1.home-frontend {
 	grid-template-columns: repeat(5, 1fr);
 	gap: 5%;
 	flex-basis: calc(100% - 300px);
-	padding-left: 4vw;
+	padding-left: 6vw;
 }
 
 .footer-author{
@@ -504,7 +504,7 @@ h1.home-frontend {
 
 .footer-img {
 	border-radius: 10px;
-	opacity: .7;
+	opacity: .9;
 	width: 200px;
 	height: 300px;
 	position: absolute;
@@ -806,7 +806,7 @@ h1.home-frontend {
 		flex-wrap: wrap; 
 		padding-top: 0px;
 		width: 100vw;
-		height: 100vh;
+		height: calc(100vh - 150px);
 		padding-bottom: 0px;
 	}
 
@@ -833,7 +833,7 @@ h1.home-frontend {
    	width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(2, 50%);
+    grid-template-rows: repeat(2, 43%);
 	}
 
 	.about-subtittle {
