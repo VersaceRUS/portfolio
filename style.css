@@ -804,7 +804,7 @@ h1.home-frontend {
 
 	.about-wrap {
 		flex-wrap: wrap; 
-		padding-top: 0px;
+		padding-top: 30px;
 		width: 100vw;
 		height: 100vh;
 		padding-bottom: 0px;
@@ -829,11 +829,15 @@ h1.home-frontend {
     height: 40%;
     }
 
+    .about-h .mobile {
+    	padding-top: 30px;
+    }
+
     .about-grid {
    	width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(2, 30%);
+    grid-template-rows: repeat(2, 33%);
 	}
 
 	.about-subtittle {
