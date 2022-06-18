@@ -376,11 +376,14 @@ h1.home-frontend {
 
 /*..SLIDE-ABOUT..*/
 
+.about-about_mobile {
+	display: none;
+}
+
 .about-wrap {
 	display: flex;
 	justify-content: space-between;
-	padding-top: 98px;
-	height: 100vh;
+	padding-top: 110px;
 	width: calc(100vw - 110px);
     padding-bottom: 25vh;
 }
@@ -413,8 +416,9 @@ h1.home-frontend {
 }
 
 .about-subtittle {
-	padding: 5vh 2vw 1vh 2vw;
+	padding-left: 1.2vw;
 	min-width: 200px;
+	padding-bottom: 25px;
 }
 
 .about-grid {
@@ -794,28 +798,47 @@ h1.home-frontend {
 		display: none;
 	}
 
+	.about-about_two {
+		display: none;
+	} 
+
 	.about-wrap {
 		flex-wrap: wrap; 
-		padding-top: 20px;
+		padding-top: 0px;
+		width: 100vw;
+		height: 100vh;
+		padding-bottom: 0px;
 	}
 
-	.about-about_one{
-		display: none;
+	.about-about_one {
+		width: 100%;
+		max-width: 100%;
+		height: 60%;
+	}
 
-    }
 
     .about-tittle {
-    padding-top: 30vw;
+    padding-top: 120px;
 	}
-    .about-about_two {
+    
+
+
+    .about-about_mobile {
+    display: flex;
     width: 100vw;
-    height: 75vh;
+    height: 40%;
     }
 
     .about-grid {
+   	width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 40%);
-    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+	}
+
+	.about-subtittle {
+		min-width: 0px;
+		padding: 30px 10px 0 10px;
 	}
 
 
@@ -862,9 +885,9 @@ h1.home-frontend {
 
 @media screen and (max-width: 992px){
 		
-	.about-about_one{
+/*	.about-about_one{
 	display: none;
-	}
+	}*/
 
 	.skills_row {
 	grid-template-rows: repeat(4, 1fr%);
