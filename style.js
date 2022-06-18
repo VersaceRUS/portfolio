@@ -19,8 +19,14 @@ document.querySelector('.about-me').addEventListener('click', () => {
 document.querySelector('.skills').addEventListener('click', () => {
   swiper.slideTo(2);
 });
+document.querySelector('.skills-me').addEventListener('click', () => {
+  swiper.slideTo(2);
+});
 
 document.querySelector('.portf').addEventListener('click', () => {
+  swiper.slideTo(3);
+});
+document.querySelector('.portf-me').addEventListener('click', () => {
   swiper.slideTo(3);
 });
 
