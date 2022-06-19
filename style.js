@@ -30,6 +30,11 @@ document.querySelector('.portf-me').addEventListener('click', () => {
   swiper.slideTo(3);
 });
 
+
+document.querySelectorAll('.header-list > li > button').forEach((n, i, a) => {
+  n.addEventListener('click', () => a.forEach(m => m.classList.toggle('active', m === n)));
+});
+
 document.addEventListener('DOMContentLoaded', function() {
    let modalButtons = document.querySelectorAll('.js-open-modal'),
        closeButtons = document.querySelectorAll('.js-modal-close');
