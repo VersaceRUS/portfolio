@@ -7,6 +7,7 @@
     --color-one: #e0e0e0;
     --color-two: #bfd7ea;
     --color-three: #b9bbc2;
+    --background-subtitle: linear-gradient(127.44deg, #505050 0%, #383838 100%);
 }
 
 body {
@@ -218,7 +219,7 @@ body, html {
 }
 .header-logo {
 	display: flex;
-	background: linear-gradient(127.44deg, #505050  0%, #383838 100%);
+	background: var(--background-subtitle);
 	width: 110px;
 	height: 100%;
 	align-items: center;
@@ -419,13 +420,13 @@ h1.home-frontend {
 .about-subtittle p {
 	font-size: 1.2rem;
 	line-height: 20px;
-	color: #bcbcbc;
+	color: var(--color-three);
 	margin-bottom: .5em;
 }
 
 .about-h {
 	font-size: 1.3rem;
-	color: #d2dee9;
+	color: var(--color-two);
 	padding-bottom: 10px;
 }
 
@@ -648,6 +649,12 @@ h1.home-frontend {
 	right: 10px;
 	font-size: 20px;
 	cursor: pointer;
+	opacity: .7;
+}
+
+.popup_close img {
+	height: 20px;
+	width: 20px;
 }
 
 .popup_title {
@@ -701,8 +708,73 @@ h1.home-frontend {
 	height: 100%;
 }
 
+.portfolio-block{
+	border: 1px solid #505050;
+	transition: .5s ease-in-out;
+	background-position: center;
+	background-size: cover;
+	opacity: .5;
+}
 
 
+.portfolio-block.one {
+	background-image: url(images/portfolio_slide1.png);
+}
+
+.portfolio-block.two {
+	background-image: url(images/portfolio_slide2.jpg);
+}
+
+.portfolio-block.three {
+	background-image: url(images/portfolio_slide3.png);
+}
+
+.portfolio-block:hover {
+	background-size: 130%;
+	transition: background-size 18s;
+}
+
+.porfolio-main {
+	display: flex;
+	flex-direction:column;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	justify-content: flex-end;
+	text-align: center;
+	opacity: .5;
+}
+
+.porfolio-main:hover,
+.porfolio-main:active{
+	opacity: 1;
+  -webkit-transition: .3s ease-in-out;
+  -moz-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+.portfolio-namber {
+	font-size: 3rem;
+	color: var(--color-two);
+	line-height: 40px;
+	padding-bottom: 20%;
+
+}
+
+.porfolio-tittle {
+	padding-top: 10px;
+	font-size: 1.4rem;
+	color: var(--color-three);
+	line-height: 30px;
+	background: var(--background-subtitle);
+}
+
+.porfolio-subtittle {
+	font-size: 1.4rem;
+	color: var(--color-three);
+	background: var(--background-subtitle);
+	padding-bottom: 10px;
+}
 
 /*--MEDIA--*/
 
@@ -817,26 +889,26 @@ h1.home-frontend {
 
 
     .about-tittle {
-    padding-top: 100px;
+    	padding-top: 100px;
 	}
 
 	.about-tittle_mobile {
-	padding-top: 30px;
-	width: 80px;
-    border-right: 1px solid #505050;
+		padding-top: 30px;
+		width: 80px;
+    	border-right: 1px solid #505050;
 	}
 
 	.about-tittle_mobile h3 {
-	display: block;
-    transform: rotate(270deg);
-    text-align: end;
-    width: 10rem;
-    height: 6rem;
-    margin: 0 auto;
-    padding-right: 0px;
-    color: var(--color-three);
-    text-decoration: none;
-    font-size: 2rem;
+		display: block;
+    	transform: rotate(270deg);
+    	text-align: end;
+    	width: 10rem;
+    	height: 6rem;
+    	margin: 0 auto;
+    	padding-right: 0px;
+    	color: var(--color-three);
+    	text-decoration: none;
+    	font-size: 2rem;
 	}
 
 	.about-tittle h3{
@@ -845,20 +917,20 @@ h1.home-frontend {
 	}
 
 	.about-subtittle_mobile {
-	min-width: 0px;
-    padding: 0 10px;
+		min-width: 0px;
+    	padding: 0 10px;
 	}
     
     .about-subtittle_mobile p {
-   	font-size: 1.2rem;
-    line-height: 20px;
-    color: #bcbcbc;
+   		font-size: 1.2rem;
+    	line-height: 20px;
+    	color: #bcbcbc;
     }
 
     .about-about_mobile {
-    display: flex;
-    width: 100vw;
-    height: 40%;
+    	display: flex;
+    	width: 100vw;
+    	height: 40%;
     }
 
     .about-h .mobile {
@@ -866,10 +938,10 @@ h1.home-frontend {
     }
 
     .about-grid {
-   	width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(2, 38%);
+   		width: 100%;
+    	display: grid;
+    	grid-template-columns: repeat(2, 50%);
+    	grid-template-rows: repeat(2, 38%);
 	}
 
 	.about-subtittle {
@@ -934,10 +1006,6 @@ h1.home-frontend {
 }
 
 @media screen and (max-width: 992px){
-		
-/*	.about-about_one{
-	display: none;
-	}*/
 
 	.skills_row {
 	grid-template-rows: repeat(4, 1fr%);
