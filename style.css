@@ -395,6 +395,7 @@ h1.home-frontend {
 	font-size: 1.3rem;
 	cursor: pointer;
 	height: 25px;
+	width: 150px;
 }
 
 .about-item:hover {
