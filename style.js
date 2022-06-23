@@ -1,6 +1,8 @@
 /*--SLIDER--*/
 
-var swiper = new Swiper(".mySwiper", {});
+var swiper = new Swiper(".mySwiper", {
+  allowTouchMove: false,
+});
 
 document.querySelector('.home').addEventListener('click', () => {
   swiper.slideTo(0);
@@ -61,3 +63,27 @@ document.addEventListener('DOMContentLoaded', function() {
    });
 });
 
+document.querySelectorAll('.about-list > li').forEach((n, i, a) => {
+  n.addEventListener('click', () => a.forEach(m => m.classList.toggle('active', m === n)));
+});
+
+var selectors = document.querySelectorAll('.about-item'),
+    blocks = document.querySelectorAll('.about-sub');
+
+Array.prototype.forEach.call(selectors, function(selector, index) {
+  selector.addEventListener('click', function(evt){
+    evt.preventDefault();
+    clickButtonHandler(blocks[index])
+
+  })
+})
+
+function clickButtonHandler(currentBlock) {
+
+  Array.prototype.forEach.call(blocks, function(block) {
+    if (block.classList.contains('opened')) {
+      block.classList.remove('opened');
+    }
+  })
+  currentBlock.classList.add('opened')
+}
